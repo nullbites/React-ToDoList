@@ -26,12 +26,11 @@ FUNCION(strImagen){
     render(props){
         return(
             <div className="task fade-in">
-                <span className="closebtn" onClick={() => this.handleRemoveTask(this.taskId)}>
-                    <button href="http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC">
-                        &#10004;
-                    </button>
-                      
-                </span>
+                <a href="https://giphy.com/explore/random">
+                    <span className="closebtn" onClick={() => this.handleRemoveTask(this.taskId)} > 
+                        &#10004; 
+                    </span>
+                </a>
                 <p className="taskContent">{ this.taskContent }</p>
 
                  <input type="hidden" role="uploadcare-uploader"
